@@ -1,0 +1,42 @@
+# .NET
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# User secrets and sensitive configuration
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+appsettings.*.json
+!appsettings.json
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# IDE and editor files
+.vs/
+.idea/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,6 @@
+@best_slim_jim_engine_HostAddress = http://localhost:5073
+
+GET {{best_slim_jim_engine_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
