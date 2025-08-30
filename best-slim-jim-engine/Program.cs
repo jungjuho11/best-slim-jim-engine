@@ -64,6 +64,13 @@ public class Program
 
         // Map Controllers (this enables your API endpoints)
         app.MapControllers();
+        
+        // Only add the port configuration for production (Docker)
+        if (!app.Environment.IsDevelopment())
+        {
+            var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
+            app.Urls.Add($"http://0.0.0.0:{port}");
+        }
 
         app.Run();
 
